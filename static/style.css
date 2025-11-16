@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e1117;
+    color: #fafafa;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 300px;
+    background-color: #262730;
+    padding: 30px 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fafafa;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #fafafa;
+}
+
+.form-group input[type="password"],
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    background-color: #0e1117;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    color: #fafafa;
+    font-size: 14px;
+}
+
+.form-group input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.main-content h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.instruction {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background-color: #262730;
+    border: 2px solid #ff4b4b;
+    border-radius: 5px;
+    color: #fafafa;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    background-color: #ff4b4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #ff6b6b;
+}
+
+.submit-btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.response-box {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #262730;
+    border-radius: 8px;
+    min-height: 100px;
+    line-height: 1.9;
+    font-size: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: none;
+}
+
+.response-box.show {
+    display: block;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff4b4b;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0e1117;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
